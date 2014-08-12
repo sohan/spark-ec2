@@ -31,7 +31,7 @@ else
       fi
       ;;    
     0.8.0)
-      wget http://s3.amazonaws.com/spark-related-packages/hive-0.9.0-bin.tgz
+      wget http://archive.cloudera.com/cdh5/cdh/5/hive-0.12.0-cdh5.0.2.tar.gz
       if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/shark-0.8.0-bin-hadoop1.tgz
       else
@@ -39,7 +39,7 @@ else
       fi
       ;;
     0.8.1)
-      wget http://s3.amazonaws.com/spark-related-packages/hive-0.9.0-bin.tgz
+      wget http://archive.cloudera.com/cdh5/cdh/5/hive-0.12.0-cdh5.0.2.tar.gz
       if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/shark-0.8.1-bin-hadoop1.tgz
       else
