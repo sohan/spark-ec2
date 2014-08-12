@@ -60,17 +60,18 @@ else
   esac
 
   echo "Unpacking Shark"
-  tar xvzf shark-*.tgz > /tmp/spark-ec2_shark.log
+  tar xvzf shark-*gz > /tmp/spark-ec2_shark.log
   rm shark-*.tgz
   mv `ls -d shark-*` shark
 
-  if stat -t hive*tgz >/dev/null 2>&1; then
+  if stat -t hive*gz >/dev/null 2>&1; then
     echo "Unpacking Hive"
     # NOTE: don't rename this because currently HIVE_HOME is set to "hive-0.9-bin".
     #       Could be renamed to "hive" in the future to support multiple hive
     #       versions associated with different shark versions.
     tar xvzf hive-*.tgz > /tmp/spark-ec2_hive.log
     rm hive-*.tgz
+    mv `ls -d hive-*` hive
   fi
 fi
 
