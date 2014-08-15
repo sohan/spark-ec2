@@ -69,8 +69,8 @@ else
     # NOTE: don't rename this because currently HIVE_HOME is set to "hive-0.9-bin".
     #       Could be renamed to "hive" in the future to support multiple hive
     #       versions associated with different shark versions.
-    tar xvzf hive-*.tgz > /tmp/spark-ec2_hive.log
-    rm hive-*.tgz
+    tar xvzf hive-*gz > /tmp/spark-ec2_hive.log
+    rm hive-*gz
     mv `ls -d hive-*` hive
   fi
 fi
